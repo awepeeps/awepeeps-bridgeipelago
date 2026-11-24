@@ -90,7 +90,7 @@ hook-pre-push:
     bun scripts/hook.ts pre-push
 
 # Fast subset for pre-push (C7.10), under 30 seconds.
-pre-push-check: fmt-check lint
+pre-push-check: fmt-check lint test
 
 # Refresh locked dependencies when a manifest changed (post-checkout, post-merge).
 deps-refresh:
